@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset = "UTF-8">
+
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0" >
+
+<title>Module 1 Exercise 3</title>
+
+<style>
+
+body { font-family: sans-serif; margin: 0; }
+.container { display: flex; min-height: 100vh; align-items: stretch; }
+.column { background: goldenrod; display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; }
+button { font-family: sans-serif; font-weight: bold; font-size: 25px; border-radius:300px;background-color: white; color: black;
+border-color: black; border-width: 5px;}
+</style>
+</head>
+
+<body>
+<div class="container">
+<div class="column" id="column1">
+
+<h1 id ="heading1">Hello</h1>
+<button onclick="buttonh()">Change Me</button>
+</div>
+<div class="column" id="column2">
+
+<h1 id="heading2">World</h1>
+<button onclick="buttonw()">Change Me</button>
+</div>
+</div>
+<script>
+
+function buttonh()
+    {
+    document.getElementById("column1").style.backgroundColor = "green";
+    document.getElementById("heading1").innerText='Goodbye';
+    document.getElementById("heading1").style.color='white';}
+function buttonw()
+    {
+    document.getElementById("column2").style.backgroundColor = "blue";
+    document.getElementById("heading2").innerText='Globe';
+    document.getElementById("heading2").style.color='white';
+    }
+</script>
+</body>
+</html>
